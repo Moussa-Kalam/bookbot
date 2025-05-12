@@ -1,4 +1,4 @@
-from stats import count_words
+from stats import count_words, count_chars
 
 
 def main():
@@ -8,6 +8,9 @@ def main():
 
     num_words = count_words(book_content)
     print(f"{num_words} words found in the document")
+
+    num_chars = count_chars(book_content)
+    print(num_chars)
 
 
 def get_book_text(file_path):
